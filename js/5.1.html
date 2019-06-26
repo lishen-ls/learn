@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        line-height: 2;
+        width: 200px;
+        background-color: antiquewhite;
+        padding: 0 10px;
+      }
+      span {
+        float: right;
+        cursor: pointer;
+      }
+      .complete {
+        background-color: greenyellow;
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="newTodo" />
+    <button id="add">添加</button>
+    <ul class="todoBox"></ul>
+    <script>
+      let newTodo = document.getElementById("newTodo");
+      let todoBox = document.getElementsByTagName("ul")[0];
+      let add = document.getElementById("add");
+      add.addEventListener("click", () => {
+        if (newTodo.value.trim() == "") {
+          alert("请输入内容");
+        } else {
+          render(newTodo.value);
+        }
+        newTodo.value = "";
+      });
+      function render(newTodo) {
+        todoBox.innerHTML += `<li>${newTodo}<span>X</span></li>`;
+      }
+      todoBox.addEventListener("click", e => {
+        if (e.target.tagName == "LI") {
+          e.target.classList.toggle("complete");
+        } else if (e.target.parentNode.tagName == "LI") {
+          e.target.parentNode.parentNode.removeChild(e.target.parentNode);
+        }
+      });
+    </script>
+  </body>
+</html>
