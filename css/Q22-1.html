@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .text {
+        font-size: 18px;
+        color: #999;
+        width: 400px;
+        line-height: 1.5;
+        text-indent: 36px;
+      }
+      .gray {
+        width: 80%;
+        font-size: 20px;
+        height: 120px;
+      }
+      .text-1{
+        color:rgb(232,83,8);
+      }
+      .text-2{
+        color:#188eee;
+      }
+      .text-3{
+        color:green;
+      }
+      .content{
+        display: none;
+        background-color: #999;
+        width: 200px;
+        height: 200px;
+      }
+      .tag{
+        display: inline-block;
+        
+      }
+      .tag:hover .content{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text">我是一个段落</p>
+    <div class="gray">我是一个div</div>
+    <p class="text-1">我的颜色是”rbg(232,83,8)“</p>
+    <p class="text-2">我的颜色是”#188eee“</p>
+    <p class="text-3">我的颜色是“绿色(green)”</p>
+    <div class="tag">
+      <span >试一试</span>
+      <div class="content"></div>
+    </div>
+  </body>
+</html>
