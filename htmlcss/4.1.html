@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .back{
+      background-color: rgba(0,0,0,0.6);
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top:0;
+      left: 0;
+      z-index: 10;
+    }
+    .dialog-box{
+      border-radius: 5px;
+      height: 100px;
+      width: 300px;
+      background-color: white;
+      overflow: hidden;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .dialog-text{
+      line-height: 60px;
+      text-align: center;
+    }
+    .dialog-btngroup{
+      border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .dialog-btn{
+      border: 0px;
+      width: 50%;
+      padding: 0;
+      height: 40px;
+      outline: none;
+      line-height: 40px;
+      font-size: 14px;
+    }
+    .dialog-btn:active{
+      background-color: aliceblue;
+    }
+    .dialog-btn:first-child{
+      border-right: 1px solid rgba(12, 2, 2, 0.2)
+    }
+  </style>
+</head>
+<body>
+  <h1>弹窗</h1>
+  <div class="back">
+    <div class="dialog-box">
+      <div class="dialog-text">
+        提示文案
+      </div>
+      <div class="dialog-btngroup">
+        <input class="dialog-btn" type="button" value="取消"><input class="dialog-btn" type="button" value="确定">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

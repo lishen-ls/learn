@@ -4,10 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>简易导航</title>
+  <style>
+    .link-list{
+      background-color: #333;
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+    .link-item{
+      text-decoration: none;
+      color: white;
+      padding: 0 20px;
+      line-height: 40px;
+      display: inline-block;
+    }
+    .link-item:hover{
+      background-color: #188eee;
+    }
+    .active{
+      background-color: #188eee;
+    }
+  </style>
 </head>
 <body>
-  <h1>弹窗</h1>
-  
+  <nav class="link-list">
+    <a href="#" class="link-item active">首页</a>
+    <a href="#" class="link-item">技术</a>
+    <a href="#" class="link-item">杂谈</a>
+    <a href="#" class="link-item">关于</a>
+  </nav>
 </body>
 </html>

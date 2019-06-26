@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .tour-item {
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin-bottom: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 200px;
+        text-decoration: none;
+        color: black;
+        transition: 200ms;
+      }
+      .tour-item:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      .tour-img{
+        border-radius: 5px 5px 0 0;
+        width:100%;
+      }
+      .item-tt{
+        line-height: 30px;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+      }
+      h3{
+        margin:0;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="tour-item" href="#">
+      <div class="tour-img-wrap">
+        <img
+          class="tour-img"
+          src="http://coding.imweb.io/img/img-style.png"
+          alt="美化图片样式"
+        />
+      </div>
+      <h3 class="item-tt" title="“华丽的冒险”之美国西部游&mdash;&mdash;day 4">
+        “华丽的冒险”之美国西部游&mdash;&mdash;day 4
+      </h3>
+    </a>
+  </body>
+</html>
